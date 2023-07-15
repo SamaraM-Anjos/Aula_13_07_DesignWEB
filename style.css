@@ -1,0 +1,240 @@
+/* 
+    marrom-fundo: rgb(27, 16, 2)
+    laranja-fundo: rgb(209, 66, 35)
+    rosa: rgb(174, 20, 60)
+
+    cor dos ícones: rgb(79, 34, 9)
+
+    Fonte: Tahoma, arial ou sem serifa
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Cabeçalho */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #110b04;
+    height: 50vh;
+}
+
+.cabeçalho{
+    text-align: center;
+    line-height: 1vh;
+    margin: 8vh 0;
+}
+.cabeçalho h1{
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+.cabeçalho p{
+    color: #ffffff8e;
+    font-size: 0.7rem;
+}
+.cabeçalho span{
+    color: #ffffffe5;
+}
+
+/* Barra de navegação */
+
+.nav-bar a{
+    padding: 2vh 2.5vh;
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-bar a:hover{
+    background-color: #ae143c;
+}
+
+/* Main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(209, 66, 35);
+    height: 50vh;
+    margin-bottom: 5%;
+}
+main h2{
+    font-size: 6vh;
+    color: #1b1002;
+}
+main p{
+    font-size: 2.5vh;
+    color: #1b1002;
+}
+
+/* Seção 1 */
+
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15%;
+    gap: 80px;
+}
+
+.curso{
+    text-align: center;
+}
+.curso h4{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.curso p{
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+/* Seção 2 */
+
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15%;
+    text-align: center;
+}
+.titulo{
+    text-align: center;
+    margin-top: 10%;
+    line-height: 0;
+}
+.titulo h3{
+    font-size: 2rem;
+    color: #110b04d8;
+}
+.titulo p{
+    color: #110b049f;
+    font-size: 0.9rem;
+}
+
+.mais{
+    margin: 15px;
+}
+.mais h5{
+    color: #110b04cb;
+}
+.mais p{
+    color: #050402c4;
+    margin-bottom: 10vh;
+}
+
+/* Rodapé */
+
+footer{
+    background-color: #1b1002;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+footer .fim{
+    margin-top: 10%;
+    color: #ffffff6b;
+    text-align: center;
+}
+.fim p{
+    margin: 0 10px;
+}
+
+footer .redes{
+    margin: 0 10vh;
+    padding: 0 10vh;
+    text-align: center;
+}
+.redes a{
+    margin: 2vh 3Svh;
+}
+
+footer .fim, footer .redes{
+    margin-bottom: 30px;
+}
+footer img{
+    width: 20px;
+    height: 30px;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+}
+footer #tumbler{
+    width: 30px;
+    height: 30px;
+}
+.direitos{
+    text-align: center;
+    margin: 0 10px;
+    color: #ffffff69;
+    font-size: xx-small;
+    border-top: #38260d6b solid;
+    padding: 5vh;
+}
+
+
+/* Botões */
+
+.link{
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ae143c;
+    padding: 10px 15px;
+}
+.link:hover{
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #ae143c;
+    border-width: 2px;
+    color: #ae143c;
+}
+
+
+/* Responsividade */
+@media (max-width: 1000px){
+
+    .nav-bar{
+        margin: 0px 20px;
+        flex-wrap: wrap;
+    }
+    .nav-bar a{
+        line-height: 10vh;
+    }
+
+    main h2, main p{
+        margin: 20px;
+    }
+
+    .section1{
+        flex-wrap: wrap;
+        margin-bottom: 20vh;
+    }
+    .section1 p{
+        margin-top: 5vh;
+        text-align: justify;
+    }
+
+    .section2{
+        display: flex;
+        flex-direction: column;
+        margin: 0 5vh;
+        gap: 10px;
+        text-align: center;
+    }
+    .titulo{
+        text-align: center;
+        line-height: 0.8;
+        margin: 30px;
+    }
+}
